@@ -1,0 +1,7 @@
+17:31:45 **** Incremental Build of configuration Debug for project full_barrier_alchemist ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\full_barrier_alchemist.o" "..\\src\\full_barrier_alchemist.cpp" 
+g++ -o full_barrier_alchemist.exe "src\\full_barrier_alchemist.o" 
+
+17:31:47 Build Finished. 0 errors, 0 warnings. (took 1s.530ms)
+

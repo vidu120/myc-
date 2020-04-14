@@ -1,0 +1,13 @@
+19:54:30 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test.o" "..\\src\\test.cpp" 
+..\src\test.cpp: In function 'int triangle(int, int, int)':
+..\src\test.cpp:9:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+g++ -o test.exe "src\\test.o" 
+c:/mingw/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/bin/ld.exe: cannot open output file test.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+
+19:54:33 Build Failed. 1 errors, 1 warnings. (took 2s.352ms)
+

@@ -1,0 +1,6 @@
+19:06:01 **** Incremental Build of configuration Debug for project When_medicine ****
+Info: Internal Builder is used for build
+g++ -o When_medicine.exe "src\\When_medicine.o" 
+
+19:06:03 Build Finished. 0 errors, 0 warnings. (took 2s.747ms)
+

@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+	int n;
+	cin >> n;
+	while (n--) {
+		int N;
+		cin >> N;
+		if (N % 2 != 0) {
+			cout <<" 1 1" << " " << pow(10, (N - 1) / 2) << endl;
+		} else {
+			cout << 1 << " " << pow(10, N / 2) << endl;
+		}
+	}
+
+	return 0;
+}

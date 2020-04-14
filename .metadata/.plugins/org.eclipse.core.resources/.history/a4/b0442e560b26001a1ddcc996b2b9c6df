@@ -1,0 +1,37 @@
+//============================================================================
+// Name        : Smart_strategy.cpp
+// Author      : vidhan
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n;
+	cin >> n;
+	while (n--) {
+		int a[2] = { };
+		cin >> a[0] >> a[1];
+		int D[a[0]] = { };
+		for (int i = 0; i < a[0]; i++) {
+			cin >> D[i];
+		}
+		int Q[a[1]] = { };
+		for (int i = 0; i < a[1]; i++) {
+			cin >> Q[i];
+		}
+		for (int i = 0; i < a[1]; i++) {
+			for (int j = 0; j < a[0]; j++) {
+				Q[i] = Q[i] / D[j];
+			}
+			cout << Q[i] << " " << flush;
+		}
+		cout << endl;
+
+	}
+
+	return 0;
+}

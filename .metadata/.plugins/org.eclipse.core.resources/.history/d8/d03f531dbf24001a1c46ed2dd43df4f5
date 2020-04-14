@@ -1,0 +1,69 @@
+//============================================================================
+// Name        : Chef_Proxy.cpp
+// Author      : vidhan
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include<string>
+using namespace std;
+
+int courseDuration() {
+	int D;
+	cin >> D;
+	return D;
+}
+
+string attendanceSheet() {
+	string att;
+	cin >> att;
+	return att;
+}
+
+int main() {
+	int n;
+	cin >> n;
+	while (n--) {
+		int D = courseDuration();
+		string att = attendanceSheet();
+		string pr;
+		int sheet[D] = { };
+		for (int i = 0; i < D; i++) {
+			pr = att.substr(i, 1);
+			if (pr == "P") {
+				sheet[i] = 1;
+			} else {
+				sheet[i] = 0;
+			}
+		}
+		int np = 0;
+		int per;
+		for (int i = 0; i < D; i++) {
+			if (sheet[i] == 1) {
+				np++;
+			}
+			if (i == D - 1) {
+				per = (np * 100) / D;
+			}
+		}
+		int c = 0;
+		if (per < 75) {
+			for (int i = 1; true; i++) {
+				c = np + i;
+				if (((c * 100) / D) >= 75) {
+					c = i;
+					cout<<c<<endl;
+					break;
+				}
+			}
+		}else{
+			cout<<0<<endl;
+			return 0;
+		}
+
+	}
+
+	return 0;
+}

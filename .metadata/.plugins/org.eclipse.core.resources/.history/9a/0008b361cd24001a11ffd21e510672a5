@@ -1,0 +1,72 @@
+//============================================================================
+// Name        : Chef_Proxy.cpp
+// Author      : vidhan
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include<string>
+using namespace std;
+
+int main() {
+	int n;
+	cin >> n;
+	while (n--) {
+		long int D;
+		cin >> D;
+		string att;
+		cin >> att;
+		string pr;
+		int sheet[D] = { };
+		for (int i = 0; i < D; i++) {
+			pr = att.substr(i, 1);
+			if (pr == "P") {
+				sheet[i] = 1;
+			} else {
+				sheet[i] = 0;
+			}
+		}
+		long int np = 0;
+		long int per = 0;
+		for (int i = 0; i < D; i++) {
+			if (sheet[i] == 1) {
+				np++;
+			}
+			if (i == D - 1) {
+				per = (np * 100) / D;
+			}
+		}
+		int c = 0;
+		if (per < 75) {
+			for (int i = 1; true; i++) {
+				c = np + i;
+				if (((c * 100) / D) >= 75) {
+					c = i;
+					break;
+				}
+			}
+			cout<<c<<endl;
+			int d = c;
+			for (int i = 2; i < (D - 2); i++) {
+				if (((sheet[i - 1] == 1) || (sheet[i - 2] == 1))
+						& ((sheet[i + 2] == 1) || (sheet[i + 1] == 1))
+						& (c != 0) & (sheet[i] == 0)) {
+					sheet[i] = 2;
+					c = c - 1;
+				}
+				if (i == D - 3) {
+					if (c != 0) {
+						cout << -1 << endl;
+					} else {
+						cout << d << endl;
+					}
+				}
+			}
+		} else {
+			cout << 0 << endl;
+		}
+	}
+	return 0;
+}

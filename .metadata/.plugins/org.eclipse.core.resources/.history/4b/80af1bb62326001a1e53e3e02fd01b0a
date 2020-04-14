@@ -1,0 +1,47 @@
+//============================================================================
+// Name        : Chef_typing.cpp
+// Author      : vidhan
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include<string>
+using namespace std;
+
+int main() {
+	int n;
+	cin >> n;
+	while (n--) {
+		int N;
+		cin >> N;
+		string a[N] = { };
+		for (int i = 0; i < N; i++) {
+			cin >> a[i];
+		}
+		//int time[N] = { };
+		string test[4] = { "d", "f", "j", "k" };
+		int test1[4] = { 0, 0, 1, 1 };
+		for (int i = 0; i < N; i++) {
+			int b[a[i].size()] = { };
+			string pr;
+			for (unsigned int j = 0; j < a[i].size(); j++) {
+				pr = a[i].substr(j, 1);
+				for (int k = 0; k < 4; k++) {
+					if (pr == test[k]) {
+						b[j] = test1[k];
+						break;
+					}
+				}
+			}
+			for (unsigned int j = 0; j < a[i].size(); j++) {
+				cout << b[j] << " " << flush;
+			}
+			cout << endl;
+		}
+
+	}
+
+	return 0;
+}

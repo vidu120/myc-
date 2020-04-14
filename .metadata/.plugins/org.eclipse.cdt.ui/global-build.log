@@ -1,0 +1,138 @@
+15:52:08 **** Rebuild of configuration Debug for project ATM ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ATM.o" "..\\src\\ATM.cpp" 
+g++ -o ATM.exe "src\\ATM.o" 
+15:59:18 **** Incremental Build of configuration Debug for project ATM ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ATM.o" "..\\src\\ATM.cpp" 
+g++ -o ATM.exe "src\\ATM.o" 
+16:02:54 **** Incremental Build of configuration Debug for project ATM ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ATM.o" "..\\src\\ATM.cpp" 
+..\src\ATM.cpp: In function 'int main()':
+..\src\ATM.cpp:16:17: error: invalid operands of types 'double' and 'int' to binary 'operator%'
+  if (X > Y || X % 5 != 0) {
+               ~~^~~
+16:06:14 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test.o" "..\\src\\test.cpp" 
+..\src\test.cpp: In function 'int main()':
+..\src\test.cpp:7:24: error: request for member 'size' in 'i', which is of non-class type 'double'
+  cout <<setprecision(i.size())<< i << endl;
+                        ^~~~
+16:13:30 **** Incremental Build of configuration Debug for project ATM ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ATM.o" "..\\src\\ATM.cpp" 
+..\src\ATM.cpp: In function 'int main()':
+..\src\ATM.cpp:18:11: error: 'pow' was not declared in this scope
+   c = X / pow(10, i);
+           ^~~
+..\src\ATM.cpp:18:11: note: suggested alternative: 'putw'
+   c = X / pow(10, i);
+           ^~~
+           putw
+..\src\ATM.cpp:25:11: error: 'pow' was not declared in this scope
+   c = Y / pow(10, i);
+           ^~~
+..\src\ATM.cpp:25:11: note: suggested alternative: 'putw'
+   c = Y / pow(10, i);
+           ^~~
+           putw
+16:13:49 **** Incremental Build of configuration Debug for project ATM ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ATM.o" "..\\src\\ATM.cpp" 
+g++ -o ATM.exe "src\\ATM.o" 
+Info: Nothing to build for ATM
+16:16:02 **** Incremental Build of configuration Debug for project ATM ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ATM.o" "..\\src\\ATM.cpp" 
+g++ -o ATM.exe "src\\ATM.o" 
+Info: Nothing to build for ATM
+16:16:48 **** Incremental Build of configuration Debug for project ATM ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ATM.o" "..\\src\\ATM.cpp" 
+g++ -o ATM.exe "src\\ATM.o" 
+16:18:20 **** Incremental Build of configuration Debug for project ATM ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ATM.o" "..\\src\\ATM.cpp" 
+g++ -o ATM.exe "src\\ATM.o" 
+16:20:17 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test.o" "..\\src\\test.cpp" 
+g++ -o test.exe "src\\test.o" 
+16:20:40 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test.o" "..\\src\\test.cpp" 
+g++ -o test.exe "src\\test.o" 
+16:20:54 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test.o" "..\\src\\test.cpp" 
+g++ -o test.exe "src\\test.o" 
+16:21:08 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test.o" "..\\src\\test.cpp" 
+g++ -o test.exe "src\\test.o" 
+16:21:16 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test.o" "..\\src\\test.cpp" 
+g++ -o test.exe "src\\test.o" 
+16:21:33 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test.o" "..\\src\\test.cpp" 
+g++ -o test.exe "src\\test.o" 
+16:21:52 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test.o" "..\\src\\test.cpp" 
+g++ -o test.exe "src\\test.o" 
+16:22:13 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test.o" "..\\src\\test.cpp" 
+g++ -o test.exe "src\\test.o" 
+16:22:24 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test.o" "..\\src\\test.cpp" 
+g++ -o test.exe "src\\test.o" 
+16:22:37 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test.o" "..\\src\\test.cpp" 
+g++ -o test.exe "src\\test.o" 
+16:22:46 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test.o" "..\\src\\test.cpp" 
+g++ -o test.exe "src\\test.o" 
+16:23:11 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test.o" "..\\src\\test.cpp" 
+g++ -o test.exe "src\\test.o" 
+16:31:13 **** Incremental Build of configuration Debug for project ATM ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ATM.o" "..\\src\\ATM.cpp" 
+g++ -o ATM.exe "src\\ATM.o" 
+Info: Nothing to build for ATM
+Info: Nothing to build for ATM
+16:34:58 **** Incremental Build of configuration Debug for project ATM ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ATM.o" "..\\src\\ATM.cpp" 
+g++ -o ATM.exe "src\\ATM.o" 
+19:33:15 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test.o" "..\\src\\test.cpp" 
+g++ -o test.exe "src\\test.o" 
+19:54:02 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test.o" "..\\src\\test.cpp" 
+..\src\test.cpp: In function 'int triangle(int, int, int)':
+..\src\test.cpp:10:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+g++ -o test.exe "src\\test.o" 
+19:54:30 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test.o" "..\\src\\test.cpp" 
+..\src\test.cpp: In function 'int triangle(int, int, int)':
+..\src\test.cpp:9:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+g++ -o test.exe "src\\test.o" 
+c:/mingw/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/bin/ld.exe: cannot open output file test.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status

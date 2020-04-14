@@ -1,0 +1,38 @@
+//============================================================================
+// Name        : Strike_spare.cpp
+// Author      : vidhan
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include<cmath>
+using namespace std;
+
+int testcases() {
+
+	long int n;
+	cin >> n;
+	return n;
+}
+
+int pinlength() {
+	int n;
+	cin >> n;
+	return n;
+}
+
+int main() {
+	long int n = testcases();
+	while (n--) {
+		int N = pinlength();
+		if (N % 2 != 0) {
+			cout << 1 << " " << pow(10, (N - 1) / 2) << endl;
+		} else {
+			cout << 1 << " " << pow(10, N / 2) << endl;
+		}
+	}
+
+	return 0;
+}

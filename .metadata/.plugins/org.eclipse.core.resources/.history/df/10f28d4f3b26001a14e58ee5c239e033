@@ -1,0 +1,10 @@
+#include <iostream>
+#include<iomanip>
+using namespace std;
+int main() {
+
+	double i = 0.50000;
+	cout <<setprecision(3)<<i<<endl;
+
+	return 0;
+}

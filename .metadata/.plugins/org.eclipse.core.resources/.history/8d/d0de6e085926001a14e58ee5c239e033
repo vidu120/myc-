@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+
+int main() {
+	int n;
+	cin >> n;
+	while (n--) {
+		int a, b;
+		cin >> a >> b;
+		if (b == a) {
+			cout << 1 << endl;
+			continue;
+		} else {
+			int ans = 0;
+			ans = 3 + ((a - b - 2) * (a - b - 1)) / 2;
+			cout << ans << endl;
+			continue;
+		}
+	}
+	return 0;
+}

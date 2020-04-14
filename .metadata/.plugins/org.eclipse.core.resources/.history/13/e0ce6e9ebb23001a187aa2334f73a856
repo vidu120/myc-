@@ -1,0 +1,9 @@
+#include<iostream>
+#include<iomanip>
+
+int main() {
+	float v = 23.3;
+	cout << v << endl;
+
+	return 0;
+}

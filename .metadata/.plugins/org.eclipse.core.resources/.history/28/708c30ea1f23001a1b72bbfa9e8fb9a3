@@ -1,0 +1,31 @@
+//============================================================================
+// Name        : When_medicine.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include<string>
+#include<cmath>
+using namespace std;
+
+int main() {
+	int n;
+	cin >> n;
+	while (n--) {
+		int yr, m, dd;
+		string y;
+		cin >> y;
+
+		yr = stoi(y.substr(0, 3));
+		m = stoi(y.substr(5, 6));
+		dd = stoi(y.substr(8, 9));
+		cout<<yr<<" "<<m<<" "<<dd<<endl;
+
+
+	}
+
+	return 0;
+}

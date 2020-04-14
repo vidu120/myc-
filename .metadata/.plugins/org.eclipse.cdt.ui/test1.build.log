@@ -1,0 +1,13 @@
+17:31:49 **** Incremental Build of configuration Debug for project test1 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test1.o" "..\\src\\test1.cpp" 
+..\src\test1.cpp: In function 'int main()':
+..\src\test1.cpp:15:9: error: expected primary-expression before ']' token
+  sort(m[], m[] + 4);
+         ^
+..\src\test1.cpp:15:14: error: expected primary-expression before ']' token
+  sort(m[], m[] + 4);
+              ^
+
+17:31:50 Build Failed. 2 errors, 0 warnings. (took 1s.166ms)
+

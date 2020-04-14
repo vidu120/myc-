@@ -1,0 +1,7 @@
+17:31:41 **** Incremental Build of configuration Debug for project UEFA_CHAMPIONS_LEAGUE ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\UEFA_CHAMPIONS_LEAGUE.o" "..\\src\\UEFA_CHAMPIONS_LEAGUE.cpp" 
+g++ -o UEFA_CHAMPIONS_LEAGUE.exe "src\\UEFA_CHAMPIONS_LEAGUE.o" 
+
+17:31:44 Build Finished. 0 errors, 0 warnings. (took 2s.798ms)
+

@@ -1,0 +1,7 @@
+17:31:38 **** Incremental Build of configuration Debug for project Spam_classification ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Spam_classification.o" "..\\src\\Spam_classification.cpp" 
+g++ -o Spam_classification.exe "src\\Spam_classification.o" 
+
+17:31:40 Build Finished. 0 errors, 0 warnings. (took 1s.562ms)
+

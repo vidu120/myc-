@@ -1,0 +1,45 @@
+//============================================================================
+// Name        : Spam_classification.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	long int n;
+	cin >> n;
+	while (n--) {
+		long int a[3] = { };
+		for (int i = 0; i < 3; i++) {
+			cin >> a[i];
+		}
+		long int b[a[0]][2] = { };
+		for (int i = 0; i < a[0]; i++) {
+			for (int k = 0; k < 2; k++) {
+				cin >> b[i][k];
+			}
+		}
+		int c[3] = { };
+		c[0] = (a[2] - a[1] + 1);
+		if (c[0] % 2 != 0) {
+			if (a[1] % 2 == 0) {
+				c[1] = (c[0] + 1) / 2;
+				c[2] = (c[0] - 1) / 2;
+			} else {
+				c[1] = (c[0] - 1) / 2;
+				c[2] = (c[0] + 1) / 2;
+			}
+		} else {
+			c[1] = c[0] / 2; //no. of even integers user id's
+			c[2] = c[0] / 2; //no. of odd integers user id's.
+		}
+		cout << c[1] << " " << c[2] << endl;
+
+	}
+
+	return 0;
+}

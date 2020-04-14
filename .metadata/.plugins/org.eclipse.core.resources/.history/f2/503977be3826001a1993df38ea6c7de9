@@ -1,0 +1,29 @@
+//============================================================================
+// Name        : ATM.cpp
+// Author      : vidhan
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	double X, Y;
+	cin >> X >> Y;
+	for (int i = 1; true; i++) {
+		if (X / (5 * i) <= 1) {
+			X = 5 * i;
+			break;
+		}
+	}
+	if (X > Y) {
+		cout << Y << endl;
+	} else {
+		Y = Y - X;
+		cout << Y << endl;
+	}
+
+	return 0;
+}

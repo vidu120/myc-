@@ -1,0 +1,7 @@
+16:34:58 **** Incremental Build of configuration Debug for project ATM ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ATM.o" "..\\src\\ATM.cpp" 
+g++ -o ATM.exe "src\\ATM.o" 
+
+16:34:59 Build Finished. 0 errors, 0 warnings. (took 1s.429ms)
+

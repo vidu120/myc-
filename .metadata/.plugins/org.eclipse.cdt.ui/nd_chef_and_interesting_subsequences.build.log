@@ -1,0 +1,44 @@
+17:31:47 **** Rebuild of configuration Debug for project nd_chef_and_interesting_subsequences ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\chef_and_interesting_subsequences.o" "..\\src\\chef_and_interesting_subsequences.cpp" 
+..\src\chef_and_interesting_subsequences.cpp: In function 'int main()':
+..\src\chef_and_interesting_subsequences.cpp:35:21: error: expected primary-expression before ')' token
+   for(int k = 0; k <) {
+                     ^
+..\src\chef_and_interesting_subsequences.cpp:35:21: error: expected ';' before ')' token
+   for(int k = 0; k <) {
+                     ^
+                     ;
+..\src\chef_and_interesting_subsequences.cpp:36:8: error: expected primary-expression before ')' token
+    for() {
+        ^
+..\src\chef_and_interesting_subsequences.cpp:39:3: error: expected primary-expression before '}' token
+   }
+   ^
+..\src\chef_and_interesting_subsequences.cpp:38:5: error: expected ';' before '}' token
+    }
+     ^
+     ;
+   }
+   ~  
+..\src\chef_and_interesting_subsequences.cpp:39:3: error: expected primary-expression before '}' token
+   }
+   ^
+..\src\chef_and_interesting_subsequences.cpp:38:5: error: expected ')' before '}' token
+    }
+     ^
+     )
+   }
+   ~  
+..\src\chef_and_interesting_subsequences.cpp:36:7: note: to match this '('
+    for() {
+       ^
+..\src\chef_and_interesting_subsequences.cpp:39:3: error: expected primary-expression before '}' token
+   }
+   ^
+..\src\chef_and_interesting_subsequences.cpp:31:7: warning: unused variable 'd' [-Wunused-variable]
+   int d[m] = { };
+       ^
+
+17:31:48 Build Failed. 8 errors, 1 warnings. (took 906ms)
+

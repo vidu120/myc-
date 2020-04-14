@@ -1,0 +1,19 @@
+#include<iostream>
+#include<string>
+using namespace std;
+
+int main() {
+	//string a = "PAAPAPAPA";
+//	string b[10] = { };
+	//b[0] = stoi(a.substr(0,3));
+//	cout<<b[0]<<endl;
+	string y;
+	int yr,dd,m;
+	cin >> y;
+
+	yr = stoi(y.substr(0, 4));
+	m = stoi(y.substr(5, 6));
+	dd = stoi(y.substr(8, 9));
+	return 0;
+	cout <<yr<<" "<<m<<" "<<dd<<endl;
+}

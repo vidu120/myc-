@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-Discount_in_a_shop",
+      "appliesTo": "Discount_in_a_shop.cpp",
+      "type": "launch"
+    }
+  ]
+}

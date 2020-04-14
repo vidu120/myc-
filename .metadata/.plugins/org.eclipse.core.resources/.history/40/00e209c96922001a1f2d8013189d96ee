@@ -1,0 +1,44 @@
+//============================================================================
+// Name        : Fibonacci_sequence.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+	int n;
+	cin >> n;
+	for (int i = 0; i < n; i++) {
+		long int N;
+		cin >> N;
+		long int a[N] = { };
+		a[0] = 0;
+		a[1] = 1;
+		for (long int j = 2; j < N; j++) {
+			a[j] = a[j - 2] + a[j - 1];
+		}
+		for (long int j = 0; j < N; j++) {
+			a[j] = a[j] % 10;
+		}
+
+		//now we have to take only the odd numbers until only one number is left !!
+		// Here comes the most important part !!
+		long int c = 0;
+		for (long int j = 1; true; j++) {
+			c = N / (pow(2, j));
+			if (c == 1) {
+				c = j;
+				break;
+			}
+		}
+		long int ans = 0;
+		ans = pow(2, c) - 1;
+		cout << a[ans] << endl;
+		return 0;
+	}
+}

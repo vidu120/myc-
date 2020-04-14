@@ -1,0 +1,41 @@
+//============================================================================
+// Name        : Rupsa_Game.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+	int n;
+	cin >> n;
+	for (int i = 0; i < n; i++) {
+		int N;
+		cin >> N;
+		int a[N + 1] = { };
+		for (int j = 0; j < (N + 1); j++) {
+			cin >> a[j];
+		}
+		int c = 0;
+		int d = 0;
+		for (int j = 0; (j < N); j++) {
+			d = 0 ;
+			for (int k = (j + 1); k < (N + 1); k++) {
+				if (j == 0) {
+					c = c + ((a[j] * a[k]) * pow(2, N - d));
+					d++;
+				}else{
+					c = c + ((a[j] * a[k]) * pow(2, N -1- d));
+										d++;
+				}
+			}
+		}
+		cout<<c<<endl;
+	}
+
+	return 0;
+}

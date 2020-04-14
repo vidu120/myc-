@@ -1,0 +1,6 @@
+17:31:29 **** Incremental Build of configuration Debug for project Chef_diet ****
+Info: Internal Builder is used for build
+g++ -o Chef_diet.exe "src\\Chef_diet.o" 
+
+17:31:29 Build Finished. 0 errors, 0 warnings. (took 704ms)
+

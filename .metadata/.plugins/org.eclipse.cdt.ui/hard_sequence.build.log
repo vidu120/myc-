@@ -1,0 +1,18 @@
+18:14:02 **** Rebuild of configuration Debug for project hard_sequence ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\hard_sequence.o" "..\\src\\hard_sequence.cpp" 
+In file included from c:\mingw\include\wchar.h:61,
+                 from c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\cwchar:44,
+                 from c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\bits\postypes.h:40,
+                 from c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\iosfwd:40,
+                 from c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ios:38,
+                 from c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\iostream:39,
+                 from ..\src\hard_sequence.cpp:9:
+c:\mingw\include\wctype.h:87:10: fatal error: stddef.h: No such file or directory
+ #include <stddef.h>
+          ^~~~~~~~~~
+compilation terminated.
+
+18:14:02 Build Failed. 1 errors, 0 warnings. (took 425ms)
+

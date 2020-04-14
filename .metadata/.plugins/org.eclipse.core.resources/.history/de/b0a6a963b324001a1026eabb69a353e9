@@ -1,0 +1,35 @@
+//============================================================================
+// Name        : Chef_Proxy.cpp
+// Author      : vidhan
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include<string>
+using namespace std;
+
+int main() {
+	int n;
+	cin >> n;
+	while (n--) {
+		int D;
+		cin >> D;
+		string att;
+		cin >> att;
+		string pr;
+		int sheet[D] = { };
+		for (int i = 0; i < D; i++) {
+			pr = att.substr(i,1);
+			if (pr == "P") {
+				sheet[i] = 1;
+			} else {
+				sheet[i] = 0;
+			}
+		}
+
+	}
+
+	return 0;
+}

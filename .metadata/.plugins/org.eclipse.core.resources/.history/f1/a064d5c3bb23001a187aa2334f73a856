@@ -1,0 +1,10 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+
+int main() {
+	double v = 23.3;
+	cout <<setprecision(10)<< v << endl;
+
+	return 0;
+}

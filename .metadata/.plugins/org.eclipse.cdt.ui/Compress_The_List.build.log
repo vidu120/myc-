@@ -1,0 +1,6 @@
+17:31:32 **** Incremental Build of configuration Debug for project Compress_The_List ****
+Info: Internal Builder is used for build
+g++ -o Compress_The_List.exe "src\\Compress_The_List.o" 
+
+17:31:32 Build Finished. 0 errors, 0 warnings. (took 629ms)
+
